@@ -43,6 +43,9 @@
 10/05/2019 Day off
 
 11/05/2019 9:20 am - 10:06 am  Fill log activities
+	   10:10 am - 10:25 am Tassia fix my GitHub
+	   11:00 am - 12:45    PHP tutorial with Tassia
+			        Select data from DB and show in a HTML page   
 	   
 			     
 			  	 
