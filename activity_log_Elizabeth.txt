@@ -45,7 +45,11 @@
 11/05/2019 9:20 am - 10:06 am  Fill log activities
 	   10:10 am - 10:25 am Tassia fix my GitHub
 	   11:00 am - 12:45    PHP tutorial with Tassia
-			        Select data from DB and show in a HTML page   
+			        Select data from DB and show in a HTML page  
+	   6:35 pm - 8:40 pm   SQL files with INSERTS for Tables: Country, Language, Civil_status, Education_level, Money_Scale
+			       Insert data into Database Visaprocess
+			       Update main repository in GitHub finalproject
+			       Update log activities 
 	   
 			     
 			  	 
