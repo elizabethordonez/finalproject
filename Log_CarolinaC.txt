@@ -37,6 +37,39 @@ Continue building form in html with css and try to connect with data base. conne
 Create new folder for do test  with small code to connect form with databas
 9:45am 10:15am
 Complete activities log
+10:30am - 11:00am
+Try to connect database with form, failed
+Changed in form code for try to connect database with form, failed.
+11:00am-12:40am
+Star explanation to connect database with php
+Download bootstrat 
+Create a new database and form php called cars, for make connection with database, failed
+Try to extract information from database
+
+12/05/2019
+11:00pm-12:30am
+Trying to insert data to DB through the form, failed
+Search information and code relative to this problem
+
+13/05/2019
+6:00pm-8:00pm
+Trying to insert data to DB through the form, failed
+Search information and code relative to this problem
+8:00pm - 8:45pm
+Working with Tassia in the code
+Learn how debug the code php, learn how find the logs for apache and db
+
+14/05/2019
+6:30pm - 9:30pm
+Try to put 3 boxes in the form bootstrap for get the telephone but I cannot get
+the same structure that we have in the form.
+
+15/05/2019
+6:30pm - 7:22pm
+
+Review with Elizabeth how upload files from GitHub using console.
+Update the log activities
+
 
 
 
