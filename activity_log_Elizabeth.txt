@@ -53,15 +53,24 @@
 			    Insert data into Database Visaprocess
 			    Update main repository in GitHub finalproject
 			    Update log activities
-12-05-2019 Day off
+12/05/2019 Day off
 
-13-05-2019 
+13/05/2019 
 	9:30 am - 11:00 am Design PHP input data form (design, search bootstrap examples)
 			   Test to retrieve data from the database to the input form
 			   Delete data from Country table because it was in Spanish
 			   Upload Country table with data in English
-	2:30 pm - 3:30 pm  PHP input data form
-	6:00 pm - 9:00 pm  PHP input data form
+	2:30 pm - 3:30 pm  PHP input data form (retrieve data from country table)
+	6:00 pm - 9:00 pm  PHP input data form (retrive data from language, civil_status, education_level, money_scale)
+
+14/05/2019
+	10:00 am - 11:30 am Search how to show Date picker into input data form and implement it
+			    Trying to format input phone number +X (XXX) XXX-XXXX it does not work
+	6:00 pm - 7:30 pm Trying to format input phone number +X (XXX) XXX-XXXX it does not work
+	7:30 pm - 9:40 pm Tassia tutorial PHP-PDO cars and user table
+
+			 
+			
 	
 			     
 			  	 
