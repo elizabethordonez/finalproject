@@ -1,0 +1,4 @@
+User@Acer MINGW64 ~/finalproject (master)
+$ git add visaprocess_DDL.sql
+warning: LF will be replaced by CRLF in visaprocess_DDL.sql.
+The file will have its original line endings in your working directory
