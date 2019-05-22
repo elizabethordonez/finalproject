@@ -2,9 +2,9 @@
 include("config.php");
 include("utils.php");
 
-$first_name = $last_name = $date_of_birth = $email = $phone ="";
-$name_err = $lname_err = $bdate_err = $email_err = $phone_err ="";
-
+$first_name = $last_name = $date_of_birth = $email = $phone = $citizenship = $gender = $country_of_residence = $language = $civil_status = $education = $ielts_65 = $money_scale = "";
+$name_err = $lname_err = $bdate_err = $email_err = $phone_err = $citizenship_err = $gender_err = $ctyofres_err = $lang_err = $civilstat_err = $educ_err = $ielts_err = $money_err = "";
+ 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 	
 	//Validate first name
@@ -26,6 +26,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			$lname_err = "Please enter a valid last name.";
 		}
 	  }
+	  
+	
+	//Validate gender
+	if (empty($_POST["gender"])){
+        $gender_err = "Please choose your gender";
+	}else {
+		$gender = ($_POST["gender"]);
+		echo($gender);
+	}
+	
+	//Validate User pick a date
+    if (empty($_POST["date_of_birth"])){
+        $bdate_err = "Please your your date of birth";
+	}else {
+		$date_of_birth = ($_POST["date_of_birth"]);
+	}
 	
 	//Validate email
     if (empty($_POST["email"])) {
@@ -44,23 +60,64 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			
 		}
     }
-	
-	//Validate User pick a date and get age
-	 
-    if (empty($_POST["date_of_birth"])){
-        $bdate_err = "Please pick your date of birth";
-	}else {
-		$date_of_birth = ($_POST["date_of_birth"]);
-	}
 
-	//Validate phone number
+	//Validate user enter a phone number
 	$input_phone = trim($_POST["phone"]);
     if (empty($input_phone)){
         $phone_err = "Please enter your phone number";
 	} else{
         $phone = $input_phone;
     }	
+	
+	//Validate citizenship
+	if (empty($_POST["citizenship"])){
+        $citizenship_err = "Please choose your citizenship";
+	}else {
+		$citizenship = ($_POST["citizenship"]);
+	}
+	
+	//Validate country of residence
+	if (empty($_POST["country_of_residence"])){
+        $ctyofres_err = "Please choose your country of residence";
+	}else {
+		$country_of_residence = ($_POST["country_of_residence"]);
+	}
+	
+	//Validate language
+	if (empty($_POST["language"])){
+        $lang_err = "Please choose your first language ";
+	}else {
+		$language = ($_POST["language"]);
+	}	
 
+	//Validate civil status
+	if (empty($_POST["civil_status"])){
+        $civilstat_err = "Please choose your civil status ";
+	}else {
+		$civil_status = ($_POST["civil_status"]);
+	}
+
+	//Validate level of education 
+	if (empty($_POST["education"])){
+        $educ_err = "Please choose your level of education ";
+	}else {
+		$education = ($_POST["education"]);
+	}
+	
+	//Validate IELTS_65 
+	if (empty($_POST["ielts_65"])){
+        $ielts_err = "Please make a selection";
+	}else {
+		$ielts_65 = ($_POST["ielts_65"]);
+	}	
+	
+	//Validate money scale 
+	if (empty($_POST["money_scale"])){
+        $money_err = "Please choose your annual budget";
+	}else {
+		$money_scale = ($_POST["money_scale"]);
+	}
+	
 	if(empty($name_err) && empty($lname_err) && empty($bdate_err) && empty($email_err) && empty($phone_err)){
 		try{
 			// Prepare an insert statement

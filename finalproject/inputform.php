@@ -20,12 +20,14 @@
 					<input type="text" name="last_name" class="form-control" maxlength="30" id="last_name" placeholder="Last Name" value="<?php echo $last_name; ?>">
 					<span class="help-block" style="color:red"><?php echo $lname_err;?></span>
 				</div>
-				<div class="form-group col-md-4">
+				<div class="form-group col-md-4 <?php echo (!empty($gender_err)) ? 'has-error' : ''; ?>" >
 					<label for="gender">Gender</label>
-					<select id="gender" class="form-control" name="gender"  >
+					<select id="gender" class="form-control" name="gender">
+						<option value="" disabled selected>Select your option</option>
 						<option>Male</option>
 						<option>Female</option>
 					</select>
+					<span class="help-block" style="color:red"><?php echo $gender_err;?></span>
 				</div>
 			</div>
 		</div>
@@ -38,7 +40,6 @@
 								$( 'input[name="date_of_birth"]' ).datepicker();
 							} );
 						</script>
-
 					<input type="text" class="form-control" id="" name="date_of_birth" placeholder="Please select a date" readonly="readonly" value="<?php echo $date_of_birth; ?>">
 					<span class="help-block" style="color:red"><?php echo $bdate_err;?></span>
 				</div>
@@ -57,7 +58,7 @@
 		</div>
 		<div class="container-fluid">
 			<div class="form-row">
-				<div class="form-group col-md-4">
+				<div class="form-group col-md-4" <?php echo (!empty($citizenship_err)) ? 'has-error' : ''; ?> >
 					<label for="citizenship">Country of citizenship</label>
 						<select name="citizenship" class="form-control">
 							<?php
@@ -69,6 +70,7 @@
 								}
 							?>
 						</select>
+						<span class="help-block" style="color:red"><?php echo $citizenship_err;?></span>
 				</div>
 				<div class="form-group col-md-4">
 					<label for="country_of_residence">Country of residence</label>
