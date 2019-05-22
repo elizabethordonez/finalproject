@@ -68,9 +68,9 @@
 		<br>
 
 		<div class="row">
-			<div class="col-sm-4"><a href="http://localhost/finalproject/inputform.php" class="btn btn-primary btn-lg active" role="button">Free Assesment Form</a></div>
+			<div class="col-sm-4"><a href="http://localhost/finalproject/finalproject/inputform.php" class="btn btn-primary btn-lg active" role="button">Free Assesment Form</a></div>
 			<div class="col-sm-4"><a href="https://client.canadaconsultportal.ca/Login/Login?siteId=CCP2018261&qlauncher=true" class="btn btn-primary btn-lg active" role="button">Asisted Assesment Form</a></div>
-			<div class="col-sm-4"><a href="http://localhost/finalproject/underconstruction.php" class="btn btn-primary btn-lg active" role="button">Book your appointment</a></div>
+			<div class="col-sm-4"><a href="http://localhost/finalproject/finalproject/underconstruction.php" class="btn btn-primary btn-lg active" role="button">Book your appointment</a></div>
 		</div>
 	</div>
 	<?php

@@ -64,8 +64,8 @@ $sql = "SELECT * FROM applicant WHERE applicant_id = :applicant_id";
 				
 				<br><br><br>
 				
-				<div class="col-md-8 text-right"><a href="http://localhost/finalproject/index.php" class="btn btn-primary btn-lg active" role="button">Home</a></div>
-				<div class="col-md-4 text-right"><a href="http://localhost/finalproject/underconstruction.php" class="btn btn-primary btn-lg active" role="button">Book your appointment</a></div>
+				<div class="col-md-8 text-right"><a href="http://localhost/finalproject/finalproject/index.php" class="btn btn-primary btn-lg active" role="button">Home</a></div>
+				<div class="col-md-4 text-right"><a href="http://localhost/finalproject/finalproject/underconstruction.php" class="btn btn-primary btn-lg active" role="button">Book your appointment</a></div>
 		</div>
 	</div>
 	

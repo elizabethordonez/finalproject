@@ -7,7 +7,7 @@
 	Documents - Documents related with the project: Project proposal, ER Diagram, group members activity logs.
 	finalproject - All files needed to run the web site Visa Process (almost the final version)
 
-	The finalproject repository will be located in the directory \xampp\htdocs\
+	The finalproject repository will be located under the directory \xampp\htdocs\
 
 3.	Open XAMPP Control Panel Session
 	Start Apache and MySQL
