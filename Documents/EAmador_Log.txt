@@ -1,0 +1,32 @@
+
+
+May 9 
+
+Defining format model to integrate it to the main website model
+
+5:00 to 7:30 am
+6:00 to 9:30 pm
+
+May 10
+
+Designing containers and navbar header
+
+11:00 pm to 2:00 am
+
+May 13 
+
+Correction of color palet  and carousel design
+6:00 to 9:30 pm
+11:30 to 1:00 am
+
+May 14
+
+Fixing bugs on responsive features of the code
+6:00 to 9:30 pm
+
+May 15
+
+Resizing pictures, logo, fonts and footer design and encodig, testing link connections and responsive features
+6:00 to 9:30 pm
+
+

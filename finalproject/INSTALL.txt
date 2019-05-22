@@ -1,0 +1,24 @@
+Follow the steps:
+
+
+
+1. Clone the repository
+
+   $ git clone https://github.com/elizabethordonez/finalproject.git
+
+2. Directories:
+	Database - Initial tables creation and load data
+	Documents - Documents related with the project: Project proposal, ER Diagram, group members activity logs.
+	finalproject - All files needed to run the web site (almost the final version)
+
+	The finalproject directory should be located in the directory \xampp\htdocs\ 
+	
+3. Create the database and tables
+   In MySQL create a database called 'visaprocess'
+   Run the script visaprocess_DDL.sql ( create tables and load initial data )
+
+3. Edit the config.php file, change update the database credentials. 
+
+4. Access the index.php file using a browser:
+
+   http://localhost/finalproject/index.html
