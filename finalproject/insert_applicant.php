@@ -33,7 +33,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $gender_err = "Please choose your gender";
 	}else {
 		$gender = ($_POST["gender"]);
-		echo($gender);
 	}
 	
 	//Validate User pick a date
@@ -117,8 +116,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	}else {
 		$money_scale = ($_POST["money_scale"]);
 	}
-	
-	if(empty($name_err) && empty($lname_err) && empty($bdate_err) && empty($email_err) && empty($phone_err)){
+
+// = $citizenship_err = $gender_err = $ctyofres_err = $lang_err = $civilstat_err = $educ_err = $ielts_err = $money_err	
+
+	if(empty($name_err) && empty($lname_err) && empty($bdate_err) && empty($email_err) && empty($phone_err) &&
+	   empty($citizenship_err) && empty($gender_err) && empty($ctyofres_err) && empty($lang_err) && empty($civilstat_err) &&
+		empty ($educ_err) && empty($ielts_err) && empty($money_err)){
 		try{
 			// Prepare an insert statement
 			//(first_name, last_name, gender, date_of_birth, email, phone, citizenship, country_of_residence,  language_id, civil_status_id, education_id, ielts_65, money_scale_id) 

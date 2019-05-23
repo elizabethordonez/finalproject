@@ -23,9 +23,9 @@
 				<div class="form-group col-md-4 <?php echo (!empty($gender_err)) ? 'has-error' : ''; ?>" >
 					<label for="gender">Gender</label>
 					<select id="gender" class="form-control" name="gender">
-						<option value="" disabled selected>Select your option</option>
-						<option>Male</option>
-						<option>Female</option>
+						<option value="">Gender</option>
+						<option value="Male" <?php if($gender=="Male") echo(" selected");?>>Male</option>
+						<option value="Female" <?php if($gender=="Female") echo(" selected");?>>Female</option>
 					</select>
 					<span class="help-block" style="color:red"><?php echo $gender_err;?></span>
 				</div>
@@ -40,7 +40,7 @@
 								$( 'input[name="date_of_birth"]' ).datepicker();
 							} );
 						</script>
-					<input type="text" class="form-control" id="" name="date_of_birth" placeholder="Please select a date" readonly="readonly" value="<?php echo $date_of_birth; ?>">
+					<input type="text" class="form-control" id="" name="date_of_birth" placeholder="MM/DD/YYYY" readonly="readonly" value="<?php echo $date_of_birth; ?>">
 					<span class="help-block" style="color:red"><?php echo $bdate_err;?></span>
 				</div>
 				<div class="form-group col-md-6 <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
@@ -60,43 +60,48 @@
 			<div class="form-row">
 				<div class="form-group col-md-4" <?php echo (!empty($citizenship_err)) ? 'has-error' : ''; ?> >
 					<label for="citizenship">Country of citizenship</label>
-						<select name="citizenship" class="form-control">
-							<?php
-								$row;
-								$STH = $DBH->query('SELECT country_name,country_id FROM country;');
-								$rows = $STH -> fetchAll();
-								foreach ($rows as $row) {
-									echo '<option value="'.$row['country_id'].'">'.$row['country_name'].'</option>';
-								}
-							?>
-						</select>
-						<span class="help-block" style="color:red"><?php echo $citizenship_err;?></span>
+						    <select class="form-control" id="citizenship" name="citizenship">
+								<option value="">Citizenship</option>
+									<?php
+										$row;
+										$STH = $DBH->query('SELECT country_name,country_id FROM country;');
+										$rows = $STH -> fetchAll();
+										foreach ($rows as $row){ 
+									?> 
+										<option value="<?php echo $row['country_id'];?>"<?php if($row['country_id']==$citizenship){echo 'selected';} ?>><?php echo $row['country_name']; ?></option>
+									<?php }; ?>
+							</select>
+							<span class="help-block" style="color:red"><?php echo $citizenship_err;?></span>
 				</div>
 				<div class="form-group col-md-4">
 					<label for="country_of_residence">Country of residence</label>
-						<select name="country_of_residence" class="form-control">
-							<?php
-								$row;
-								$STH = $DBH->query('SELECT country_name,country_id FROM country;');
-								$rows = $STH -> fetchAll();
-								foreach ($rows as $row) {
-									echo '<option value="'.$row['country_id'].'">'.$row['country_name'].'</option>';
-								}
-							?>
-						</select>
+						    <select class="form-control" id="country_of_residence" name="country_of_residence">
+								<option value="">Residence</option>
+									<?php
+										$row;
+										$STH = $DBH->query('SELECT country_name,country_id FROM country;');
+										$rows = $STH -> fetchAll();
+										foreach ($rows as $row){ 
+									?> 
+										<option value="<?php echo $row['country_id'];?>"<?php if($row['country_id']==$country_of_residence){echo 'selected';} ?>><?php echo $row['country_name']; ?></option>
+									<?php }; ?>
+							</select>
+							<span class="help-block" style="color:red"><?php echo $ctyofres_err;?></span>
 				</div>
 				<div class="form-group col-md-4">
 					<label for="language">First language</label>
-						<select name="language" class="form-control">
-							<?php
-								$row;
-								$STH = $DBH->query('SELECT language_name, language_id FROM language;');
-								$rows = $STH -> fetchAll();									
-								foreach ($rows as $row) {
-									echo '<option value="'.$row['language_id'].'">'.$row['language_name'].'</option>';
-								}
-							?>
+						<select name="language" class="form-control" id="language">
+								<option value="">Language</option>
+									<?php
+										$row;
+										$STH = $DBH->query('SELECT language_name,language_id FROM language;');
+										$rows = $STH -> fetchAll();
+										foreach ($rows as $row){ 
+									?> 
+										<option value="<?php echo $row['language_id'];?>"<?php if($row['language_id']==$language){echo 'selected';} ?>><?php echo $row['language_name']; ?></option>
+									<?php }; ?>
 						</select>
+						<span class="help-block" style="color:red"><?php echo $lang_err;?></span>
 				</div>
 			</div>	
 		</div>
@@ -104,52 +109,60 @@
 			<div class="form-row">
 				<div class="form-group col-md-4">
 					<label for="civil_status">Civil status</label>
-					<select name="civil_status" class="form-control">
-						<?php
-							$row;
-							$STH = $DBH->query('SELECT civil_status_desc, civil_status_id FROM civil_status;');
-							$rows = $STH -> fetchAll();									
-							foreach ($rows as $row) {
-								echo '<option value="'.$row['civil_status_id'].'">'.$row['civil_status_desc'].'</option>';
-							}
-						?>
+					<select name="civil_status" class="form-control" id="civil_status">
+						<option value="">Civil status</option>
+							<?php
+								$row;
+								$STH = $DBH->query('SELECT civil_status_desc,civil_status_id FROM civil_status;');
+								$rows = $STH -> fetchAll();
+								foreach ($rows as $row){ 
+							?> 
+								<option value="<?php echo $row['civil_status_id'];?>"<?php if($row['civil_status_id']==$civil_status){echo 'selected';} ?>><?php echo $row['civil_status_desc']; ?></option>
+							<?php }; ?>
 					</select>
+					<span class="help-block" style="color:red"><?php echo $civilstat_err;?></span>
 				</div> 
 				<div class="form-group col-md-4">
 					<label for="education">Highest level of education</label>
-					<select name="education" class="form-control">
-						<?php
-							$row;
-							$STH = $DBH->query('SELECT education_level_desc, education_id FROM education_level;');
-							$rows = $STH -> fetchAll();									
-							foreach ($rows as $row) {
-								echo '<option value="'.$row['education_id'].'">'.$row['education_level_desc'].'</option>';
-							}
-						?>
+					<select name="education" class="form-control" id="education">
+						<option value="">Education</option>
+							<?php
+								$row;
+								$STH = $DBH->query('SELECT education_level_desc,education_id FROM education_level;');
+								$rows = $STH -> fetchAll();
+								foreach ($rows as $row){ 
+							?> 
+								<option value="<?php echo $row['education_id'];?>"<?php if($row['education_id']==$education){echo 'selected';} ?>><?php echo $row['education_level_desc']; ?></option>
+							<?php }; ?>
 					</select>
+					<span class="help-block" style="color:red"><?php echo $educ_err;?></span>
 				</div>
 				<div class="form-group col-md-4">
 					<label for="ielts_65">Do you have an IELTS 6.5?</label>
 					<select id="ielts_65" class="form-control" name="ielts_65">
-						<option>Y</option>
-						<option>N</option>
+						<option value="">IELTS 6.5</option>
+						<option value="N" <?php if($ielts_65=="N") echo(" selected");?>> N</option>
+						<option value="Y" <?php if($ielts_65=="Y") echo(" selected");?>> Y</option>
 					</select>
+					<span class="help-block" style="color:red"><?php echo $ielts_err;?></span>
 				</div>						
 			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="form-group col-md-4">
 				<label for="money_scale">Annual budget to come to Canada</label>
-					<select name="money_scale" class="form-control">
-						<?php
-							$row;
-							$STH = $DBH->query('SELECT minimum_quantity, maximum_quantity,money_scale_id FROM money_scale;');
-							$rows = $STH -> fetchAll();									
-							foreach ($rows as $row) {
-								echo '<option value="'.$row['money_scale_id'].'">'.'CAD$ '.$row['minimum_quantity'].' - '.$row['maximum_quantity'].'</option>';
-							}
-						?>
+					<select name="money_scale" class="form-control" id="money_scale">
+						<option value="">Annual budged</option>
+							<?php
+								$row;
+								$STH = $DBH->query('SELECT minimum_quantity, maximum_quantity,money_scale_id FROM money_scale;');
+								$rows = $STH -> fetchAll();
+								foreach ($rows as $row){ 
+							?> 
+								<option value="<?php echo $row['money_scale_id'];?>"<?php if($row['money_scale_id']==$money_scale){echo 'selected';} ?>><?php echo 'CAD$ '.$row['minimum_quantity'] . ' - ' .$row['maximum_quantity'] ; ?></option>
+							<?php }; ?>
 					</select>
+					<span class="help-block" style="color:red"><?php echo $money_err;?></span>
 			</div>
 		</div>
 		<div class="container-fluid">
