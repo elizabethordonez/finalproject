@@ -1,0 +1,22 @@
+This installation instructions are for the platform XAMPP: Apache - PHP - MySQL
+
+1.	Go to the directory \xampp\htdocs\
+
+	Clone the repository
+
+	$ git clone https://github.com/elizabethordonez/finalproject.git
+
+2.	Open XAMPP Control Panel Session
+	Start Apache and MySQL
+
+3.	Open a phpMyAdmin session 
+
+5.	Create the database and tables
+
+	Click Import button and choose file visaprocess_DDL.sql located in \xampp\htdocs\finalproject directory, then click Go
+
+6. 	Edit the config.php file located in \xampp\htdocs\finalproject\ and change update the database credentials if needed. 
+
+5. 	Access the index.php file using a browser:
+
+   	http://localhost/finalproject/index.php
