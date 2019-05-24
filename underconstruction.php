@@ -7,7 +7,7 @@
 	<div class="container-fluid">
 		<div class="jumbotron">
 			<div class="row text-center">
-				<h2> We are sorry ... the appointment module is</h2>
+				<h2> We are sorry ... the appointment module is still</h2>
 				<image src="underconstruction.jpg" class="img-fluid" alt="Responsive image">
 			</div>
 			<br>

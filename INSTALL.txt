@@ -15,7 +15,10 @@ This installation instructions are for the platform XAMPP: Apache - PHP - MySQL
 
 	Click Import button and choose file visaprocess_DDL.sql located in \xampp\htdocs\finalproject directory, then click Go
 
-6. 	Edit the config.php file located in \xampp\htdocs\finalproject\ and change update the database credentials if needed. 
+6. 	Edit the config.php file located in \xampp\htdocs\finalproject\ and change update the database credentials if needed
+	
+	Edit the init.php file located in \config, change update the database credentials if needed (This is for the demo
+	(Mariocoski Bootstrap Calendar)
 
 5. 	Access the index.php file using a browser:
 
