@@ -68,7 +68,75 @@
 			    Trying to format input phone number +X (XXX) XXX-XXXX it does not work
 	6:00 pm - 7:30 pm Trying to format input phone number +X (XXX) XXX-XXXX it does not work
 	7:30 pm - 9:40 pm Tassia tutorial PHP-PDO cars and user table
+15/05/2019
+	9:00 am - 11:00 am Review PHP-PDO tutorial 
+	6:30 pm - 7:22 pm Review with Carolina how upload files from GitHub using console.
+	7:30 pm - 9:30 pm  Try to implement Date Picker into input data form.
+	
+16/05/2019
+	1:30 pm - 2:30 pm Implement Date Picker into input data form.
+	6:00 pm - 8:00 pm Global explanation about curent platforms and development tools by Tassia
+	
+17/05/2019 
+	9:00 am - 11:30 am Look for information about PHP-PDO https://www.tutorialrepublic.com/php-tutorial/php-mysql-introduction.php 
+	2:00 pm - 4:00 pm Visaprocess start doing input form fields validation
+	
+18/05/1029 
+	10:00 am - 11:15 pm Testing add employee record to the demo database using https://www.tutorialrepublic.com/php-tutorial as a guide
+				using Procedural and PDO 
+	2:00 pm - 5:00 pm Visaprocess input form fields validation.
 
+19/05/2019	
+	9:00 am - 11:30 am Testing visaprocess input form validation data: when the user make an input format mistake the page reloads and 
+				the values entered by the user are lost.
+20/05/2019
+	9:00 am - 12:00 m Get project from GitHub 
+				Change the index.html page to index.php page.
+				Extract the instructions that will be part of the header.php and the footer.php.
+				Modify index.php and inputform.php pages to include header and footer
+				Link the index.php page to the inputform.php page
+				
+	1:00 pm - 2:00 pm Get login user application made by Tassia, check how to manage classes 
+	3:00 pm - 5:00 pm Table applicant change gender from char(1) to char(6)
+				Table applicant remove "_id" from columns name language_id, civil_status_id, education_id, money_scale_id.
+				Finally reload the input form keeps the data entered by the user but the problem remains the same for the dropdown lists.
+	7:30 pm - 9:00 pm Design answer page depends on the condition to obtain the student visa or tourist visa. 
+
+21/05/2019
+	9:00 am - 11:00 am Try to find a solution in internet to keep data for the dropdrown lists and test each one, but they didn't work.
+	2:00 pm 3:00 pm Try to find how can the input form page "remember" the data entered by the user. 
+			Carolina found a calendar application but it doesn't work on Mac, she send me link and the instructions to download from GitHub.
+			Clone respostory Mariocoski Bootstrap Calendar, try to test it but when I tried to insert an appointment the program 
+			calendar1_visit_creator fails:
+			Fatal error: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\php_tutorial\bootstrap-calendar\calendar2_visit_creator.php on line 70 
+	5:30 pm - 7:00 pm Try to use Mariocoski Bootstrap Calendar in visaprocess application. 
+			Rename index.php to calendar.php. Modidy calendar.php and make_an_appointment.php adding instructions to show visaproceess header.
+			Still having problems tryng to insert an appointment.
+			
+
+22/05/2019 
+	9:00 am - 10:00 am Find how to send the applicant_id to the answer page to show the user the visa type he/she could apply
+			answer page finished. 
+	7:00 pm - 7:30 pm Fixed the gender selection made by the user. The page "remember" the value selected. Tassia gave me the solution.
+	8:30 pm - 11:00 pm Tried to keep the values for the dropdown lists an finally fixed it. 
+			
+23/04/1029
+	9:00 am - 10:30 am Check the funtionality of the visaprocess application
+	1:30 pm - 3:00 pm Back to the Mariocoski Bootstrap Calendar try to fix the calendar appointment creation. 
+			Add  Mariocoski Bootstrap Calendar tables to the visaprocess database.
+			Try to implement a new calendar appointment creation.
+	7:00 pm - 10:00 pm Review and implement Tassia Quick feedback recommendations to improve GitHub repository
+			Continue with the new appointment creation but it didn't work. 
+			Finally, if the user wants to make an appointment, the application shows the calendar, the user select a date and hour, then 
+			the system shows a message The appontment module is still under construction.
+
+24/05/2018
+	9:00 am - 10:00 am Include UML Mariocoski Bootstrap Calendar to the UML Visaprocess to update Entity-Relationship Diagram.
+			Update INSTALL instructions
+			Check application funcionality
+			Update GitHub projectfinal repository
+			Update README.md
+	12:00 m - 1:20 Update activities log
 			 
 			
 	
